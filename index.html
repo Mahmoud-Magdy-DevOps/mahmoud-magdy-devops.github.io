@@ -470,8 +470,8 @@
   .cert-card:hover { border-color: var(--border-strong); }
   .cert-card.featured { border-color: var(--accent); background: var(--accent-light); }
   .cert-logo {
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
@@ -481,7 +481,12 @@
     font-weight: 600;
     flex-shrink: 0;
   }
-  .cert-logo-gcp { background: #FEF3C7; color: #92400E; }
+  .cert-logo img {
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: contain;
+  }
+  .cert-logo-gcp { background: #d7eaff; color: #92400E; }
   .cert-logo-ms { background: #EFF6FF; color: #1D4ED8; }
   .cert-logo-dv { background: #F5F3FF; color: #5B21B6; }
   .cert-logo-ta { background: #ECFDF5; color: #065F46; }
@@ -685,7 +690,8 @@
       <div class="skill-card">
         <div class="skill-card-header">
           <div class="skill-icon">
-            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg stroke="currentColor" width="50px" height="50px" viewBox="0 0 24 24" id="infinite-3" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color"><path id="primary" d="M14.84,9.18a3.73,3.73,0,1,1-.2,5.46L9.36,9.36a3.73,3.73,0,1,0-.2,5.46" style="fill: none; stroke: #2563EB; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+            <!-- <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> -->
           </div>
           <span class="skill-card-title">CI/CD &amp; DevOps</span>
         </div>
@@ -717,7 +723,7 @@
       <div class="skill-card">
         <div class="skill-card-header">
           <div class="skill-icon">
-            <svg fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <svg fill="currentColor" width="50px" height="50px" viewBox="-2 -5 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-cloud"><path d='M5 14a5 5 0 1 1 1.561-9.751A7.002 7.002 0 0 1 20 7a7 7 0 0 1-7 7H5zm0-2h8a5 5 0 1 0-4.6-6.965l-.72 1.686-1.742-.572A3 3 0 1 0 5 12z'/></svg>
           </div>
           <span class="skill-card-title">Cloud Platforms</span>
         </div>
@@ -916,7 +922,7 @@
     <div class="certs-grid">
 
       <div class="cert-card featured">
-        <div class="cert-logo cert-logo-gcp">GCP</div>
+        <div class="cert-logo cert-logo-gcp"><img src="images/Google-Cloud-Associate-Cloud-Engineer.png" alt="Google Cloud Logo"></div>
         <div class="cert-info">
           <p class="cert-name">Google Cloud Associate Cloud Engineer</p>
           <p class="cert-issuer">Google Cloud · 2025</p>
@@ -925,7 +931,7 @@
       </div>
 
       <div class="cert-card">
-        <div class="cert-logo cert-logo-ms">AZ</div>
+        <div class="cert-logo cert-logo-ms"><img src="images/azure-cloud.png" alt="Microsoft Azure Logo"></div>
         <div class="cert-info">
           <p class="cert-name">Microsoft Azure: From Zero to Hero – The Complete Guide</p>
           <p class="cert-issuer">Udemy / Microsoft Azure</p>
@@ -933,7 +939,7 @@
       </div>
 
       <div class="cert-card">
-        <div class="cert-logo cert-logo-ms">AAD</div>
+        <div class="cert-logo cert-logo-ms"><img src="images/Azure-logo.png" alt="Azure Active Directory Logo"></div>
         <div class="cert-info">
           <p class="cert-name">Azure Active Directory Identity and Access Management</p>
           <p class="cert-issuer">Udemy / Microsoft Azure</p>
@@ -941,7 +947,7 @@
       </div>
 
       <div class="cert-card">
-        <div class="cert-logo cert-logo-dv">DV</div>
+        <div class="cert-logo cert-logo-dv"><img src="images/devops.png" alt="DevOps Logo"></div>
         <div class="cert-info">
           <p class="cert-name">DevOps Beginners to Advanced — Decoding DevOps with Projects</p>
           <p class="cert-issuer">Udemy</p>
@@ -949,7 +955,7 @@
       </div>
 
       <div class="cert-card">
-        <div class="cert-logo cert-logo-ta">TA</div>
+        <div class="cert-logo cert-logo-ta"><img src="images/Talents_Arena.png" alt="Talents Arena Logo"></div>
         <div class="cert-info">
           <p class="cert-name">DevOps Hands-On Camp</p>
           <p class="cert-issuer">Talents Arena</p>
@@ -957,7 +963,7 @@
       </div>
 
       <div class="cert-card">
-        <div class="cert-logo cert-logo-dv">ITI</div>
+        <div class="cert-logo cert-logo-dv"><img src="images/ITI.png" alt="ITI Logo"></div>
         <div class="cert-info">
           <p class="cert-name">Intensive DevOps Training — AWS, GCP, Docker, Kubernetes, Terraform</p>
           <p class="cert-issuer">Information Technology Institute (ITI) · 2023</p>
