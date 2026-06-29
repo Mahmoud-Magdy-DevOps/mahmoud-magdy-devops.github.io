@@ -482,7 +482,7 @@
     /* ── Projects ── */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
       gap: 1.5rem;
     }
 
@@ -566,15 +566,16 @@
       align-items: flex-start;
       gap: 1rem;
       transition: border-color 0.15s;
+      text-decoration: none;
     }
 
     .cert-card:hover {
       border-color: var(--border-strong);
+      background: var(--accent-light);
     }
 
-    .cert-card.featured {
-      border-color: var(--accent);
-      background: var(--accent-light);
+    .cert-card:last-child {
+      grid-column: 2;
     }
 
     .cert-logo {
@@ -1271,53 +1272,68 @@
       <h2 class="section-title">Certifications</h2>
       <div class="certs-grid">
 
-        <div class="cert-card featured">
+        <a class="cert-card" href="https://drive.google.com/file/d/1-p7x8XaX4-NZKX0U3HVzEJuXOPRIbisg/view?usp=sharing"
+          target="_blank">
+          <div class="cert-logo cert-logo-dv"><img src="images/DevOps-Leader.svg" alt="DevOps Leader"></div>
+          <div class="cert-info">
+            <p class="cert-name">DevOps Leader</p>
+            <p class="cert-issuer">DEVOPS INSTITUTE · 2026</p>
+            <span class="cert-badge cert-badge-pass">✓ Passed</span>
+          </div>
+        </a>
+
+        <a class="cert-card" href="https://drive.google.com/file/d/1fuZClZCPmapef8LioEDBjteopjdIHFfV/view?usp=sharing"
+          target="_blank">
           <div class="cert-logo cert-logo-gcp"><img src="images/Google-Cloud-Associate-Cloud-Engineer.png"
               alt="Google Cloud Logo"></div>
           <div class="cert-info">
             <p class="cert-name">Google Cloud Associate Cloud Engineer</p>
-            <p class="cert-issuer">Google Cloud · 2025</p>
+            <p class="cert-issuer">Google Cloud · 2026</p>
             <span class="cert-badge cert-badge-pass">✓ Passed</span>
           </div>
-        </div>
+        </a>
 
-        <div class="cert-card">
+        <a class="cert-card" href="https://drive.google.com/file/d/1rWYXHT3-v0paF-b0VBnIQasip49QhiEa/view?usp=sharing"
+          target="_blank">
           <div class="cert-logo cert-logo-ms"><img src="images/azure-cloud.png" alt="Microsoft Azure Logo"></div>
           <div class="cert-info">
             <p class="cert-name">Microsoft Azure: From Zero to Hero – The Complete Guide</p>
             <p class="cert-issuer">Udemy / Microsoft Azure</p>
           </div>
-        </div>
+        </a>
 
-        <div class="cert-card">
+        <a class="cert-card" href="https://drive.google.com/file/d/1cu3PeJDGI-3WH30mC4g3Jd7C-GDVPWAd/view?usp=sharing"
+          target="_blank">
           <div class="cert-logo cert-logo-ms"><img src="images/Azure-logo.png" alt="Azure Active Directory Logo"></div>
           <div class="cert-info">
             <p class="cert-name">Azure Active Directory Identity and Access Management</p>
             <p class="cert-issuer">Udemy / Microsoft Azure</p>
           </div>
-        </div>
+        </a>
 
-        <div class="cert-card">
+        <a class="cert-card" href="https://drive.google.com/file/d/1itW8rMa5dx7hNslly9m8tcEc3WgyOaRs/view?usp=sharing"
+          target="_blank">
           <div class="cert-logo cert-logo-dv"><img src="images/devops.png" alt="DevOps Logo"></div>
           <div class="cert-info">
             <p class="cert-name">DevOps Beginners to Advanced — Decoding DevOps with Projects</p>
             <p class="cert-issuer">Udemy</p>
           </div>
-        </div>
+        </a>
+
+        <a class="cert-card" href="https://drive.google.com/file/d/1Zr6K2KjAjQvPwcGRUJgZnzk0vn1FOksH/view?usp=sharing"
+          target="_blank">
+          <div class="cert-logo cert-logo-dv"><img src="images/ITI.png" alt="ITI Logo"></div>
+          <div class="cert-info">
+            <p class="cert-name">Intensive DevOps Training — AWS, GCP, Docker, Kubernetes, Terraform</p>
+            <p class="cert-issuer">Information Technology Institute (ITI) · 2023</p>
+          </div>
+        </a>
 
         <div class="cert-card">
           <div class="cert-logo cert-logo-ta"><img src="images/Talents_Arena.png" alt="Talents Arena Logo"></div>
           <div class="cert-info">
             <p class="cert-name">DevOps Hands-On Camp</p>
             <p class="cert-issuer">Talents Arena</p>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-logo cert-logo-dv"><img src="images/ITI.png" alt="ITI Logo"></div>
-          <div class="cert-info">
-            <p class="cert-name">Intensive DevOps Training — AWS, GCP, Docker, Kubernetes, Terraform</p>
-            <p class="cert-issuer">Information Technology Institute (ITI) · 2023</p>
           </div>
         </div>
 
